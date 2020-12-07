@@ -14,3 +14,8 @@ class MyClass(object):
 num = MyClass(42)
 num.aMethod(66)
 print(num)
+print(MyClass.instance_count)
+inst = MyClass(44)
+print(MyClass.instance_count)
+del(inst)
+print(MyClass.instance_count)
